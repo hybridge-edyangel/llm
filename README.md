@@ -1,4 +1,19 @@
-# Asistente de Escritura Automática ✍️
+# Proyectos de Inteligencia Artificial (LLMs) 🤖
+
+> 🎓 **PROYECTO 2 DISPONIBLE:**  
+> La solución completa para el **Proyecto 2: Tutor Virtual Inteligente** (desarrollado con Streamlit y la API de OpenAI `gpt-4o-mini`) se encuentra ubicada en la carpeta [`/tutor_virtual`](./tutor_virtual).  
+> Consulta la documentación detallada y guía de ejecución en [`tutor_virtual/README.md`](./tutor_virtual/README.md).
+
+---
+
+## 📁 Proyectos en este Repositorio
+
+- ✍️ **Proyecto 1: Asistente de Escritura Automática** (`/asistente_escritura`) - Streamlit + Google Gemini API.
+- 🎓 **Proyecto 2: Tutor Virtual Inteligente** (`/tutor_virtual`) - Streamlit + OpenAI GPT-4o-mini API.
+
+---
+
+# Proyecto 1: Asistente de Escritura Automática ✍️
 
 Este es un proyecto sencillo de un Asistente de Escritura impulsado por Inteligencia Artificial utilizando **Streamlit** para la interfaz gráfica y **Google Gemini API** como modelo de lenguaje subyacente.
 
