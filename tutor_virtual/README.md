@@ -1,10 +1,10 @@
-# 🎓 Proyecto 2: Tutor Virtual Inteligente
+# Proyecto 2: Tutor Virtual Inteligente
 
 Aplicación web interactiva desarrollada con **Streamlit** y la API de **OpenAI** (modelo `gpt-4o-mini`), diseñada para actuar como un tutor pedagógico personalizado que guía el aprendizaje paso a paso y refuerza los conocimientos mediante preguntas de comprobación activa.
 
 ---
 
-## 🚀 Características Principales
+## Características Principales
 
 - **Interfaz de Chat Moderna:** Basada en los componentes nativos de chat de Streamlit (`st.chat_message` y `st.chat_input`) con streaming en tiempo real para una interacción fluida.
 - **Barra Lateral de Configuración:**
@@ -17,14 +17,14 @@ Aplicación web interactiva desarrollada con **Streamlit** y la API de **OpenAI*
 
 ---
 
-## 🛠 Requisitos Previos
+## Requisitos Previos
 
 - **Python 3.8 o superior** instalado en el sistema.
 - Una **API Key de OpenAI** con acceso a modelos GPT (puedes obtenerla en [OpenAI Platform](https://platform.openai.com/)).
 
 ---
 
-## 📦 Instalación y Configuración Paso a Paso
+## Instalación y Configuración Paso a Paso
 
 ### 1. Navegar al directorio del proyecto
 Abre tu terminal y ubícate en la carpeta `tutor_virtual`:
@@ -65,7 +65,7 @@ OPENAI_API_KEY=tu-api-key-aqui
 
 ---
 
-## ▶️ Ejecución de la Aplicación
+## Ejecución de la Aplicación
 
 Con el entorno virtual activado, inicia el servidor de desarrollo de Streamlit:
 
@@ -77,7 +77,7 @@ La aplicación se abrirá automáticamente en tu navegador web predeterminado en
 
 ---
 
-## 📚 Estructura de Archivos
+## Estructura de Archivos
 
 ```
 tutor_virtual/
@@ -88,7 +88,7 @@ tutor_virtual/
 
 ---
 
-## 💡 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **[Python](https://www.python.org/)**
 - **[Streamlit](https://streamlit.io/)** (Framework frontend interactivo)

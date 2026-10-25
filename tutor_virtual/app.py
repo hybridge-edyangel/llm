@@ -9,7 +9,6 @@ load_dotenv()
 # Configuración visual de la página
 st.set_page_config(
     page_title="Tutor Virtual Inteligente",
-    page_icon="🎓",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -44,7 +43,7 @@ st.markdown("""
 # Barra Lateral (Sidebar)
 # ---------------------------------------------------------
 with st.sidebar:
-    st.header("⚙️ Configuración del Tutor")
+    st.header("Configuración del Tutor")
     
     # 1. Entrada de API Key (oculta tipo password)
     env_api_key = os.getenv("OPENAI_API_KEY", "")
@@ -60,7 +59,7 @@ with st.sidebar:
     
     # 2. Selección del Área de Conocimiento
     area_conocimiento = st.selectbox(
-        "📚 Área de Conocimiento:",
+        "Área de Conocimiento:",
         options=["Programación", "Matemáticas", "IA", "General"],
         index=0,
         help="El tutor adaptará sus ejemplos, terminología y enfoque según el área seleccionada."
@@ -69,7 +68,7 @@ with st.sidebar:
     # 3. Control deslizante para el Nivel de Explicación
     niveles = ["Principiante", "Intermedio", "Avanzado"]
     nivel_explicacion = st.select_slider(
-        "🎯 Nivel de Explicación:",
+        "Nivel de Explicación:",
         options=niveles,
         value="Intermedio",
         help="Ajusta la profundidad técnica, complejidad y analogías pedagógicas."
@@ -78,21 +77,21 @@ with st.sidebar:
     st.divider()
     
     # 4. Botón para reiniciar o limpiar la sesión de chat
-    if st.button("🧹 Reiniciar / Limpiar Chat", use_container_width=True):
+    if st.button("Reiniciar / Limpiar Chat", use_container_width=True):
         st.session_state.messages = []
         st.session_state.pop("initialized", None)
         st.rerun()
 
     st.markdown("---")
     st.caption(
-        "🤖 **Modelo:** `gpt-4o-mini`  \n"
-        "💡 **Metodología:** Método socrático, explicación guiada paso a paso y preguntas de comprobación activa."
+        "**Modelo:** `gpt-4o-mini`  \n"
+        "**Metodología:** Método socrático, explicación guiada paso a paso y preguntas de comprobación activa."
     )
 
 # ---------------------------------------------------------
 # Encabezado Principal
 # ---------------------------------------------------------
-st.markdown('<div class="main-title">🎓 Tutor Virtual Inteligente</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-title">Tutor Virtual Inteligente</div>', unsafe_allow_html=True)
 st.markdown(
     f'<div class="subtitle">Acompañamiento pedagógico personalizado en <b>{area_conocimiento}</b> a nivel <b>{nivel_explicacion}</b>.</div>',
     unsafe_allow_html=True
@@ -171,7 +170,7 @@ if "messages" not in st.session_state:
 # Mensaje de bienvenida inicial si la conversación está vacía
 if len(st.session_state.messages) == 0:
     mensaje_bienvenida = (
-        f"¡Hola! 👋 Soy tu **Tutor Virtual Inteligente**.  \n\n"
+        f"¡Hola! Soy tu **Tutor Virtual Inteligente**.  \n\n"
         f"Estoy listo para acompañarte en tus dudas de **{area_conocimiento}** en nivel **{nivel_explicacion}**.\n\n"
         f"¿Qué tema o ejercicio te gustaría revisar hoy? Explícame brevemente y lo analizaremos juntos paso a paso."
     )
@@ -190,7 +189,7 @@ user_prompt = st.chat_input("Escribe tu duda o responde a la pregunta de comprob
 if user_prompt:
     # 1. Validar presencia de la API Key
     if not api_key:
-        st.error("🔑 Por favor, ingresa tu OpenAI API Key en la barra lateral para continuar.")
+        st.error("Por favor, ingresa tu OpenAI API Key en la barra lateral para continuar.")
         st.stop()
     
     # 2. Agregar mensaje del usuario al estado y mostrarlo
@@ -233,12 +232,12 @@ if user_prompt:
             st.session_state.messages.append({"role": "assistant", "content": full_response})
 
         except AuthenticationError:
-            st.error("❌ **Error de autenticación:** La API Key de OpenAI es inválida o no tiene permisos. Verifica la clave ingresada en la barra lateral.")
+            st.error("**Error de autenticación:** La API Key de OpenAI es inválida o no tiene permisos. Verifica la clave ingresada en la barra lateral.")
         except RateLimitError:
-            st.error("⏳ **Límite de cuota excedido:** Has alcanzado el límite de peticiones o tu cuenta de OpenAI no tiene créditos suficientes.")
+            st.error("**Límite de cuota excedido:** Has alcanzado el límite de peticiones o tu cuenta de OpenAI no tiene créditos suficientes.")
         except APIConnectionError:
-            st.error("🌐 **Error de conexión:** No fue posible conectar con los servidores de OpenAI. Verifica tu conexión a internet.")
+            st.error("**Error de conexión:** No fue posible conectar con los servidores de OpenAI. Verifica tu conexión a internet.")
         except OpenAIError as oai_err:
-            st.error(f"⚠️ **Error en la API de OpenAI:** {oai_err}")
+            st.error(f"**Error en la API de OpenAI:** {oai_err}")
         except Exception as err:
-            st.error(f"💥 **Ocurrió un error inesperado:** {err}")
+            st.error(f"**Ocurrió un error inesperado:** {err}")

@@ -3,9 +3,9 @@ import google.generativeai as genai
 import os
 
 # Configuración básica de la página
-st.set_page_config(page_title="Asistente de Escritura", page_icon="✍️", layout="centered")
+st.set_page_config(page_title="Asistente de Escritura", layout="centered")
 
-st.title("✍️ Asistente de Escritura Automática")
+st.title("Asistente de Escritura Automática")
 st.write("¡Hola! Soy tu asistente de escritura. Puedo ayudarte a sugerir oraciones, corregir tu gramática, mejorar tu estilo o incluso redactar textos completos.")
 
 # Configurar API Key

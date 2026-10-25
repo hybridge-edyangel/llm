@@ -1,23 +1,23 @@
-# Proyectos de Inteligencia Artificial (LLMs) 🤖
+# Proyectos de Inteligencia Artificial (LLMs)
 
-> 🎓 **PROYECTO 2 DISPONIBLE:**  
+> **PROYECTO 2 DISPONIBLE:**  
 > La solución completa para el **Proyecto 2: Tutor Virtual Inteligente** (desarrollado con Streamlit y la API de OpenAI `gpt-4o-mini`) se encuentra ubicada en la carpeta [`/tutor_virtual`](./tutor_virtual).  
 > Consulta la documentación detallada y guía de ejecución en [`tutor_virtual/README.md`](./tutor_virtual/README.md).
 
 ---
 
-## 📁 Proyectos en este Repositorio
+## Proyectos en este Repositorio
 
-- ✍️ **Proyecto 1: Asistente de Escritura Automática** (`/asistente_escritura`) - Streamlit + Google Gemini API.
-- 🎓 **Proyecto 2: Tutor Virtual Inteligente** (`/tutor_virtual`) - Streamlit + OpenAI GPT-4o-mini API.
+- **Proyecto 1: Asistente de Escritura Automática** (`/asistente_escritura`) - Streamlit + Google Gemini API.
+- **Proyecto 2: Tutor Virtual Inteligente** (`/tutor_virtual`) - Streamlit + OpenAI GPT-4o-mini API.
 
 ---
 
-# Proyecto 1: Asistente de Escritura Automática ✍️
+# Proyecto 1: Asistente de Escritura Automática
 
 Este es un proyecto sencillo de un Asistente de Escritura impulsado por Inteligencia Artificial utilizando **Streamlit** para la interfaz gráfica y **Google Gemini API** como modelo de lenguaje subyacente.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 El asistente cuenta con tres funciones principales diseñadas para facilitar el proceso de escritura:
 
@@ -25,14 +25,14 @@ El asistente cuenta con tres funciones principales diseñadas para facilitar el 
 2. **Sugerir continuación**: Si te quedas sin ideas, puedes escribir el inicio de un texto y el asistente redactará el siguiente párrafo de forma coherente.
 3. **Escribir un texto desde cero**: Solo necesitas ingresar un tema (ej. "Un correo solicitando vacaciones") y seleccionar el tono deseado (Profesional, Casual, Creativo, Persuasivo, etc). El modelo generará el texto completo por ti.
 
-## 🛠 Requisitos Previos
+## Requisitos Previos
 
 Para utilizar esta aplicación necesitas:
 
 - Python 3.8 o superior instalado en tu sistema.
 - Una **API Key de Google Gemini** (Puedes obtenerla gratuitamente en [Google AI Studio](https://aistudio.google.com/)).
 
-## 📦 Instalación
+## Instalación
 
 1. Clona el repositorio o navega hasta la carpeta del proyecto en tu terminal:
    ```bash
@@ -51,7 +51,7 @@ Para utilizar esta aplicación necesitas:
    pip install -r requirements.txt
    ```
 
-## ▶️ Uso
+## Uso
 
 Para iniciar la aplicación, asegúrate de tener tu entorno virtual activado y ejecuta el siguiente comando:
 
@@ -63,7 +63,7 @@ streamlit run app.py
 - La aplicación se abrirá automáticamente en tu navegador web predeterminado (usualmente en `http://localhost:8501`).
 - En la interfaz, **ingresa tu API Key de Gemini** en el campo correspondiente para comenzar a usar todas las funcionalidades.
 
-## 📚 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - [Python](https://www.python.org/)
 - [Streamlit](https://streamlit.io/) (Interfaz de usuario web)
